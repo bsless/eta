@@ -16,7 +16,7 @@ introduces a volatile read, which we might not want on our hot path.
 We want to just pass `app` by value:
 
 ```clojure
-(jetty/run-server #'app opts)
+(jetty/run-server app opts)
 ```
 
 So what do we do? Abuse the compiler.
