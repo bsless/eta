@@ -36,6 +36,7 @@ So what happens if we eta-expand a function:
 (transduce xf2 conj [] (range 3)) ;; => [1 2 3]
 
 ;; Now redefine `foo` and use the transducers again
+(defn foo [a] (+ a a))
 (transduce xf conj [] (range 3)) ;; => [1 2 3]
 (transduce xf2 conj [] (range 3)) ;; => [0 2 4] << SUCCESS
 ```
