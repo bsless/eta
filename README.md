@@ -47,6 +47,10 @@ This library introduces a single macro, `$`, which eta expands to
 multiple arities, allowing us to enjoy both worlds in development time
 and production artifacts.
 
+For further reading on this problem and how it affects development,
+refer to this [excellent, thorough post](https://srasu.srht.site/var-evaluation.html)
+by Joshua Suskalo
+
 ## Usage
 
 ```clojure
