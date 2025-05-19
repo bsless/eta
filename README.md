@@ -58,8 +58,14 @@ by Joshua Suskalo
 (jetty/run-server ($ app) opts)
 ```
 
+If you like being fancy, they all do the same:
+
+```clojure
+(require '[bsless.eta :refer [$ η h]])
+```
+
 ## License
 
-Copyright © 2023 Ben Sless
+Copyright © 2025 Ben Sless
 
 Distributed under the Eclipse Public License version 1.0.
